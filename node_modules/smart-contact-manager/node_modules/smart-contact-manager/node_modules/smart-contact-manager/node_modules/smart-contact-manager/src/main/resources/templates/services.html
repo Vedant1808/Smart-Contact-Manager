@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Services Page</title>
+  </head>
+  <body>
+    <div id="content">
+      <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
+          <p class="text-lg text-gray-600 mb-12">
+            Smart Contact Manager offers powerful tools to manage and organize
+            your contacts effortlessly.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="bg-white shadow-lg rounded-xl p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <div class="flex items-center justify-center mb-4">
+                <svg
+                  class="w-12 h-12 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10h11M9 21V3m0 0l4 4m-4-4l-4 4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-700">Cloud Backup</h3>
+              <p class="text-gray-500 mt-2">
+                Securely store your contacts and sync them across multiple
+                devices with cloud backup.
+              </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+              class="bg-white shadow-lg rounded-xl p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <div class="flex items-center justify-center mb-4">
+                <svg
+                  class="w-12 h-12 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10h11M9 21V3m0 0l4 4m-4-4l-4 4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Smart Categorization
+              </h3>
+              <p class="text-gray-500 mt-8">
+                Tag and categorize contacts to keep them organized for quick
+                access.
+              </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="bg-white shadow-lg rounded-xl p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            >
+              <div class="flex items-center justify-center mb-4">
+                <svg
+                  class="w-12 h-12 text-red-500"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10h11M9 21V3m0 0l4 4m-4-4l-4 4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-700">
+                Import & Export
+              </h3>
+              <p class="text-gray-500 mt-2">
+                Easily import or export your contacts to and from different
+                platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      console.log("service page");
+    </script>
+  </body>
+</html>
